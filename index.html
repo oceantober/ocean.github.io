@@ -3,32 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>My Blog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="my_fav.html">My Favorite Coffee</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>About Us</h2>
-            <p>This is a brief paragraph about your website. Explain what your site is about or what your business does.</p>
+        <section class="featured-post">
+            <div class="container">
+                <h2>Featured Post</h2>
+                <p>This is an introduction to the featured post of the blog. It's a highlight or a recent piece that deserves special attention.</p>
+                <a href="#">Read More</a>
+            </div>
         </section>
-        <section>
-            <h2>Our Services</h2>
-            <p>Detail the services you offer.</p>
+        <section class="recent-posts">
+            <div class="container">
+                <h2>Recent Posts</h2>
+                <div class="post">
+                    <h3>Post Title 1</h3>
+                    <p>A brief summary of the post. This should entice readers to click through and read the entire piece.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="post">
+                    <h3>Post Title 2</h3>
+                    <p>A brief summary of the post. This should entice readers to click through and read the entire piece.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <!-- Add more posts as needed -->
+            </div>
         </section>
     </main>
     <footer>
-        <p>© 2024 My Website</p>
+        <div class="container">
+            <p>© 2024 My Blog. All rights reserved.</p>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
